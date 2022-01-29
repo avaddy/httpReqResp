@@ -1,0 +1,8 @@
+{
+    "records": [{
+        "name": "Production",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}

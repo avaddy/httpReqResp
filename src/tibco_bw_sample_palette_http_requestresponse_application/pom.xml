@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tibco.bw</groupId>
+    <artifactId>tibco_bw_sample_palette_http_requestresponse_application.parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../tibco_bw_sample_palette_http_requestresponse_application.parent</relativePath>
+  </parent>
+  <artifactId>tibco_bw_sample_palette_http_requestresponse_application</artifactId>
+  <packaging>bwear</packaging>
+  <properties>
+    <docker.env.property.file>/Users/asreddy/workspace/bwce/006/samples/tibco_bw_sample_palette_http_requestresponse_application/docker-host-env-dev.properties</docker.env.property.file>
+    <project.type>Docker</project.type>
+    <docker.property.file>docker-dev.properties</docker.property.file>
+    <bw.Home>/bwce/2.7</bw.Home>
+    <k8s.property.file>k8s-dev.properties</k8s.property.file>
+    <skipTests>true</skipTests>
+    <failIfNoTests>false</failIfNoTests>
+    <tibco.Home>/opt/tibco/bwce/006</tibco.Home>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.tibco.plugins</groupId>
+        <artifactId>bw6-maven-plugin</artifactId>
+        <version>2.9.0</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>com.tibco.plugins</groupId>
+        <artifactId>bw6-maven-plugin</artifactId>
+        <version>2.9.0</version>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>
